@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3079722678121271134, guid: 30c6c1ac2de6407488e176a8c66dbacd, type: 3}
+    - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: maxSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: secondToMaxSpeed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

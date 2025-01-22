@@ -16,6 +16,18 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
+      propertyPath: maxSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
+      propertyPath: minSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
+      propertyPath: secondToMaxSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6267072903320435858, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
       propertyPath: m_Name
       value: ball-cat_0 (1) Variant
