@@ -131,6 +131,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 2795737506251923257, guid: 9319bff3183db0b44a69e37b4d05c800, type: 3}
+      propertyPath: cooldown
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795737506251923257, guid: 9319bff3183db0b44a69e37b4d05c800, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795737506251923257, guid: 9319bff3183db0b44a69e37b4d05c800, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6567868381842900111, guid: 9319bff3183db0b44a69e37b4d05c800, type: 3}
       propertyPath: m_Name
       value: ball-cat_0 (1) Variant 5
@@ -192,6 +204,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 4245904097284452948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: cooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245904097284452948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245904097284452948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5117723368986388962, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
       propertyPath: m_Name
       value: ball-cat_0 (1) Variant 2
@@ -518,6 +542,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7453122931816428850, guid: 0fcbcd630b3c1b444aa0db6833c33c9f, type: 3}
   m_PrefabInstance: {fileID: 7834046113153509131}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &467312610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467312607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79e7a5691328fd4cbc72a46926017ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  newPosition: {x: 0, y: 0}
+  mousePosG: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +869,7 @@ GameObject:
   - component: {fileID: 630170726}
   - component: {fileID: 630170725}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: TimerPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -906,6 +945,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: cooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4688717851058663438, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: m_Name
       value: ball-cat_0 (1) Variant
@@ -1103,6 +1154,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 1603518807396043235, guid: 4bc701388ab842d41ae67df5808fd25d, type: 3}
+      propertyPath: cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603518807396043235, guid: 4bc701388ab842d41ae67df5808fd25d, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603518807396043235, guid: 4bc701388ab842d41ae67df5808fd25d, type: 3}
+      propertyPath: minTimeToLaunch
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6549447887258960702, guid: 4bc701388ab842d41ae67df5808fd25d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.384944
@@ -1444,7 +1507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -326, y: -24}
+  m_AnchoredPosition: {x: -326, y: -24.000015}
   m_SizeDelta: {x: -689.04, y: -287.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334464391
@@ -1541,6 +1604,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: cooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1602,6 +1677,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 8059202378383666292, guid: abfa511e38bbf6942883652358760f0a, type: 3}
+      propertyPath: cooldown
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059202378383666292, guid: abfa511e38bbf6942883652358760f0a, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059202378383666292, guid: abfa511e38bbf6942883652358760f0a, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1695,7 +1782,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 467312607}
     - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
+      propertyPath: cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
       propertyPath: maxSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
+      propertyPath: minLaunchSpeed
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3103165497701967652, guid: 48e1b89c9dac3594fb0fe17274e9f9f2, type: 3}
@@ -2004,8 +2103,9 @@ GameObject:
   - component: {fileID: 1729427655}
   - component: {fileID: 1729427657}
   - component: {fileID: 1729427656}
+  - component: {fileID: 1729427658}
   m_Layer: 5
-  m_Name: Text Header
+  m_Name: timerTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2131,6 +2231,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729427654}
   m_CullTransparentMesh: 1
+--- !u!114 &1729427658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729427654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a10e9be8d11884798577dad374f5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1746098564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2143,6 +2255,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 1573184684322253251, guid: b340dc51cfea54b4d9098b62177cd924, type: 3}
+      propertyPath: cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573184684322253251, guid: b340dc51cfea54b4d9098b62177cd924, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573184684322253251, guid: b340dc51cfea54b4d9098b62177cd924, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6445096203643511582, guid: b340dc51cfea54b4d9098b62177cd924, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.9483185
@@ -2204,6 +2328,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 3150168421545750689, guid: 122dd037d27857742ae916043a7c090e, type: 3}
+      propertyPath: cooldown
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150168421545750689, guid: 122dd037d27857742ae916043a7c090e, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150168421545750689, guid: 122dd037d27857742ae916043a7c090e, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6223429812099672855, guid: 122dd037d27857742ae916043a7c090e, type: 3}
       propertyPath: m_Name
       value: ball-cat_0 (1) Variant 7
@@ -2309,6 +2445,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 467312607}
+    - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
+      propertyPath: cooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2429,6 +2577,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4184497725144866001, guid: 0fcbcd630b3c1b444aa0db6833c33c9f, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6018588024461193362, guid: 0fcbcd630b3c1b444aa0db6833c33c9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.62
@@ -2476,7 +2628,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7453122931816428850, guid: 0fcbcd630b3c1b444aa0db6833c33c9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 467312610}
   m_SourcePrefab: {fileID: 100100000, guid: 0fcbcd630b3c1b444aa0db6833c33c9f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
