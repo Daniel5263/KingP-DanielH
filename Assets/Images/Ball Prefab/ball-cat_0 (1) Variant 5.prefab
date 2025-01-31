@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4780702114217539696, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: m_Radius
+      value: 3.7245178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780702114217539696, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.014289618
+      objectReference: {fileID: 0}
     - target: {fileID: 5739398989801321134, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -59,6 +67,14 @@ PrefabInstance:
     - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
       propertyPath: maxSpeed
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7567234495424516096, guid: 7bf05ff2f13752a4480f96511fbdf9b4, type: 3}
       propertyPath: secondToMaxSpeed

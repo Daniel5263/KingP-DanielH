@@ -8,16 +8,52 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1703585062441632712, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: m_Radius
+      value: 3.7692842
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703585062441632712, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703585062441632712, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2070573
+      objectReference: {fileID: 0}
     - target: {fileID: 1898933891634039062, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8487396936026994761, guid: ef332b6f9e431c84b815a080a5dc7840, type: 3}
+    - target: {fileID: 4128134476887115660, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: m_Radius
+      value: 3.8038468
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128134476887115660, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.04861474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128134476887115660, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.20334363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: cooldown
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: maxSpeed
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: minSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: minLaunchSpeed
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}

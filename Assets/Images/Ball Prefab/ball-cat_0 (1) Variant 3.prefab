@@ -8,13 +8,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1274584492307814948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: m_Radius
+      value: 3.1633317
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274584492307814948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00852108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274584492307814948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.008559227
+      objectReference: {fileID: 0}
     - target: {fileID: 2039633725385887994, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -7627733529822777162, guid: dcf0c780945a430429925b5563ceee32, type: 3}
     - target: {fileID: 4245904097284452948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: cooldown
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245904097284452948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
       propertyPath: maxSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245904097284452948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245904097284452948, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5117723368986388962, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
       propertyPath: m_Name
