@@ -295,6 +295,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79e7a5691328fd4cbc72a46926017ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  normalSpeed: 10
   newPosition: {x: 0, y: 0}
   mousePosG: {x: 0, y: 0, z: 0}
+  dashSpeed: 25
+  dashing: 0
+  baseSpeed: 10
+  speed: 10
+  dashDuration: 3
+  timedashStart: 0
+  timelastDashEnded: 0
