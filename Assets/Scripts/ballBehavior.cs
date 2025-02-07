@@ -24,6 +24,7 @@ public class ballBehavior : MonoBehaviour
     public int secondsToMaxSpeed;
 
     Rigidbody2D body;
+    public bool rerouting;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -119,6 +120,30 @@ public class ballBehavior : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         body.position = getRandomPosition();
+        targetPosition = getRandomPosition();
+        targetPosition = getRandomPosition();
+        launching = false;
+        rerouting = true;
+    }
+
+    public void Reroute(Collision2D collision)
+    {
+        GameObject otherBall = collision.gameObject;
+        if (rerouting == true)
+        {
+            otherBall.GetComponent<ballBehavior>().rerouting = false;
+            Rigidbody2D ballBody = otherBall.GetComponent<Rigidbody2D>();
+            Vector2 contact = collision.GetContact(0).normal;
+            targetPosition = Vector2.Reflect(targetPosition, contact).normalized;
+
+            launching = false;
+
+            float separationDistance = 0.1f;
+            ballBody.position += contact * separationDistance;
+        } else
+        {
+            rerouting = true;
+        }
     }
 
     public void launch()
@@ -157,6 +182,11 @@ public class ballBehavior : MonoBehaviour
         if (collision.gameObject.tag == "Wall")
         {
             targetPosition = getRandomPosition();
+        }
+
+        if (collision.gameObject.tag == "Ball")
+        {
+            Reroute(collision);
         }
        // Debug.Log(this + "Collided with: " + collision.gameObject.name);
     }
