@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: cooldown
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: maxSpeed

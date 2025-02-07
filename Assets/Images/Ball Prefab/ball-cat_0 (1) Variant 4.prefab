@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1573184684322253251, guid: b340dc51cfea54b4d9098b62177cd924, type: 3}
       propertyPath: cooldown
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1573184684322253251, guid: b340dc51cfea54b4d9098b62177cd924, type: 3}
       propertyPath: maxSpeed

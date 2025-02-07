@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5240650692151515850}
   m_Layer: 0
   m_Name: ball-cat_0
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,24 +102,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a1558d022d1f342aa820fd38bae29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -10.102
-  minY: -4.219
-  maxX: 10.102
-  maxY: 4.219
-  minSpeed: 0
-  maxSpeed: 0
+  minX: -4.84
+  minY: -3.76
+  maxX: 9.6
+  maxY: 3.83
+  minSpeed: 2
+  maxSpeed: 5
   targetPosition: {x: 0, y: 0}
-  secondToMaxSpeed: 0
   target: {fileID: 155023840036964361, guid: b2d7376cdcf5ac74c8393909574f1b63, type: 3}
-  minLaunchSpeed: 1
-  maxLaunchSpeed: 3
-  minTimeToLaunch: 0
-  maxTimeToLaunch: 0
-  timeLaunchStart: 1
-  cooldown: 4
   launching: 0
-  launchDuration: 0
   timeLastLaunch: 0
+  launchDuration: 0
+  timeLaunchStart: 0
+  minLaunchSpeed: 0
+  maxLaunchSpeed: 0
+  cooldown: 0
+  secondsToMaxSpeed: 0
 --- !u!50 &-2171875387049248670
 Rigidbody2D:
   serializedVersion: 5
@@ -145,7 +143,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!60 &5240650692151515850
 PolygonCollider2D:
