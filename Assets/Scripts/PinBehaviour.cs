@@ -54,8 +54,9 @@ public class PinBehaviour : MonoBehaviour{
 
     public void Dash(){
         if (dashing == true){
-            float howLong = Time.time - timedashStart;
-            if (howLong > dashSpeed){
+            float currentTime = Time.time;
+            float howLong = currentTime - timedashStart;
+            if (howLong > dashDuration){
                 dashing = false;
                 speed = baseSpeed;
 
