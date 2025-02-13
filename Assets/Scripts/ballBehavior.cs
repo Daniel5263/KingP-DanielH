@@ -26,6 +26,7 @@ public class ballBehavior : MonoBehaviour
     Rigidbody2D body;
     public bool rerouting;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +34,7 @@ public class ballBehavior : MonoBehaviour
         //minSpeed = 0.001f;
         //maxSpeed = 2.0f;
         targetPosition = getRandomPosition();
+        initialPosition();
     }
 
     // Update is called once per frame
@@ -120,10 +122,18 @@ public class ballBehavior : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         body.position = getRandomPosition();
-        targetPosition = getRandomPosition();
+        transform.position = getRandomPosition();
         targetPosition = getRandomPosition();
         launching = false;
         rerouting = true;
+    }
+
+    public void setBounds(float miX, float maX, float miY, float maY)
+    {
+        minX = miX;
+        maxX = maX;
+        minY = miY;
+        maxY = maY;
     }
 
     public void Reroute(Collision2D collision)
@@ -191,4 +201,13 @@ public class ballBehavior : MonoBehaviour
        // Debug.Log(this + "Collided with: " + collision.gameObject.name);
     }
 
+    public void setTarget(GameObject pin)
+    {
+        target = pin;
+    }
+
+    internal void setTarget(GameObject[] targetObject)
+    {
+        throw new System.NotImplementedException();
+    }
 }

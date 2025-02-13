@@ -15,11 +15,16 @@ public class SpawningBehaviour : MonoBehaviour
     public float maxY;
 
     void Start() {
-        
+        spawnBall();
     }
 
     void Update() {
-        
+        float currrentTime = Time.time;
+        float timeElapsed = currrentTime - startTime;
+        if (timeElapsed > spawnRatio)
+        {
+            spawnBall();
+        }
     }
 
     void spawnBall() {
@@ -28,6 +33,11 @@ public class SpawningBehaviour : MonoBehaviour
         {
             int selection = Random.Range(0, numVariants);
             newObject = Instantiate(ballVariants[selection], new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+            ballBehavior ballBehavior = newObject.GetComponent<ballBehavior>();
+            ballBehavior.setBounds(minX, maxX, minY, maxY);
+            ballBehavior.setTarget(targetObject);
+            ballBehavior.initialPosition();
         }
+        startTime = Time.time;
     }
 }
