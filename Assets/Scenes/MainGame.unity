@@ -635,10 +635,10 @@ MonoBehaviour:
   - {fileID: 1311036571548350402, guid: abfa511e38bbf6942883652358760f0a, type: 3}
   - {fileID: 5117723368986388962, guid: 1d274084afe514747a380be4e02ddd15, type: 3}
   - {fileID: 7511061001307501173, guid: b340dc51cfea54b4d9098b62177cd924, type: 3}
-  targetObject:
-  - {fileID: 897263724}
-  startTime: 1
-  spawnRatio: 6
+  targetObject: {fileID: 155023840036964361, guid: b2d7376cdcf5ac74c8393909574f1b63, type: 3}
+  startTime: 0
+  minSpawn: 5
+  maxSpawn: 15
   minX: -4.84
   maxX: 9.6
   minY: -3.76
@@ -1224,11 +1224,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2d7376cdcf5ac74c8393909574f1b63, type: 3}
---- !u!1 &897263724 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 155023840036964361, guid: b2d7376cdcf5ac74c8393909574f1b63, type: 3}
-  m_PrefabInstance: {fileID: 897263723}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1110537400
 GameObject:
   m_ObjectHideFlags: 0

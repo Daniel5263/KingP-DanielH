@@ -4,30 +4,37 @@ using UnityEngine.UIElements;
 public class SpawningBehaviour : MonoBehaviour
 {
     public GameObject[] ballVariants;
-    public GameObject[] targetObject;
+    public GameObject targetObject;
     GameObject newObject;
     public float startTime;
-    public float spawnRatio = 1.0f;
+
+    public float minSpawn;
+    public float maxSpawn;
+    private float spawnRatio;
 
     public float minX;
     public float maxX;
     public float minY;
     public float maxY;
 
-    void Start() {
+    void Start()
+    {
+        SetRandomSpawnRatio();
         spawnBall();
     }
 
-    void Update() {
-        float currrentTime = Time.time;
-        float timeElapsed = currrentTime - startTime;
+    void Update()
+    {
+        float currentTime = Time.time;
+        float timeElapsed = currentTime - startTime;
         if (timeElapsed > spawnRatio)
         {
             spawnBall();
         }
     }
 
-    void spawnBall() {
+    void spawnBall()
+    {
         int numVariants = ballVariants.Length;
         if (numVariants > 0)
         {
@@ -38,6 +45,12 @@ public class SpawningBehaviour : MonoBehaviour
             ballBehavior.setTarget(targetObject);
             ballBehavior.initialPosition();
         }
+        SetRandomSpawnRatio();
         startTime = Time.time;
+    }
+
+    void SetRandomSpawnRatio()
+    {
+        spawnRatio = Random.Range(minSpawn, maxSpawn);
     }
 }

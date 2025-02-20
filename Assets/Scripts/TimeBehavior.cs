@@ -12,14 +12,15 @@ public class TimeBehavior : MonoBehaviour{
         if (textField == null){
             Debug.Log("No component found.");
         }
+
+        timer = 0f;
     }
 
-    void Update(){
-        timer = Time.time;
+    void Update()
+    {
+        timer += Time.deltaTime;
 
-        textField.text = timer.ToString();
-
-        if(textField != null)
+        if (textField != null)
         {
             int minutes = Mathf.FloorToInt(timer / 60);
             int seconds = Mathf.FloorToInt(timer % 60);
@@ -27,7 +28,10 @@ public class TimeBehavior : MonoBehaviour{
 
             textField.SetText(message);
         }
+    }
 
-        // Debug.Log(timer);
+    public void ResetTimer()
+    {
+        timer = 0f;
     }
 }

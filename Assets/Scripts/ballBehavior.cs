@@ -205,9 +205,4 @@ public class ballBehavior : MonoBehaviour
     {
         target = pin;
     }
-
-    internal void setTarget(GameObject[] targetObject)
-    {
-        throw new System.NotImplementedException();
-    }
 }
