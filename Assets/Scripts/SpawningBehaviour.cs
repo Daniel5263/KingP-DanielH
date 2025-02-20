@@ -7,6 +7,7 @@ public class SpawningBehaviour : MonoBehaviour
     public GameObject targetObject;
     GameObject newObject;
     public float startTime;
+    public Pins pinsDB;
 
     public float minSpawn;
     public float maxSpawn;
@@ -21,6 +22,7 @@ public class SpawningBehaviour : MonoBehaviour
     {
         SetRandomSpawnRatio();
         spawnBall();
+        spawnPin();
     }
 
     void Update()
@@ -47,6 +49,11 @@ public class SpawningBehaviour : MonoBehaviour
         }
         SetRandomSpawnRatio();
         startTime = Time.time;
+    }
+
+    void spawnPin()
+    {
+        targetObject = Instantiate(pinsDB.getPin(CharacterManager.selection).prefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
     }
 
     void SetRandomSpawnRatio()

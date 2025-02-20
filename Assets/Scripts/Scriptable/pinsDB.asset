@@ -12,4 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aba6fda1e30d2349ba5471a0ba30964, type: 3}
   m_Name: pinsDB
   m_EditorClassIdentifier: 
-  pins: []
+  pins:
+  - name: Original
+    prefab: {fileID: 155023840036964361, guid: b2d7376cdcf5ac74c8393909574f1b63, type: 3}
+  - name: Green
+    prefab: {fileID: 3936065283620323829, guid: cf362bccb14eecb48b8e102acc29852f, type: 3}
+  - name: Pink Dog
+    prefab: {fileID: 3886246175774479598, guid: a704d9f45ccc3ff4cb6812c7aee9cd3e, type: 3}
+  - name: Cyber
+    prefab: {fileID: 8418397274359761421, guid: 92720abe99928e649ae8fced704c540a, type: 3}
+  - name: Chocolate
+    prefab: {fileID: 7525380518983430589, guid: 0e9ade14c18b875438be77e325415855, type: 3}
+  - name: Chef
+    prefab: {fileID: 3963852554850335258, guid: 9129a1f5d434cf04bb7f541ca5c08b64, type: 3}
+  - name: Bird
+    prefab: {fileID: 602477571961425089, guid: 06b49c1853d93844fbc5a36c43d33a24, type: 3}
+  - name: Eye of Rah
+    prefab: {fileID: 7453122931816428850, guid: 0fcbcd630b3c1b444aa0db6833c33c9f, type: 3}
