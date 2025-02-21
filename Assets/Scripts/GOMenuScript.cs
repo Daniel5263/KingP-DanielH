@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class GOMenuScript : MonoBehaviour
 {
@@ -16,6 +17,14 @@ public class GOMenuScript : MonoBehaviour
 
     public void gotoGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        StartCoroutine(WaitForSoundAndTransition("MainMenu"));
+    }
+
+    private IEnumerator WaitForSoundAndTransition(string MainMenu)
+    {
+        AudioSource audioSource = GetComponentInChildren<AudioSource>();
+        audioSource.Play();
+        yield return new WaitForSeconds(audioSource.clip.length);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(MainMenu);
     }
 }

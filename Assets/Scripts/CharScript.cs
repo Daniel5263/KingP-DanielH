@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class CharScript : MonoBehaviour
 {
@@ -16,6 +17,14 @@ public class CharScript : MonoBehaviour
 
     public void gotoGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("CharacterSelection");
+        StartCoroutine(WaitForSoundAndTransition("CharacterSelection"));
+    }
+
+    private IEnumerator WaitForSoundAndTransition(string CharacterSelection)
+    {
+        AudioSource audioSource = GetComponentInChildren<AudioSource>();
+        audioSource.Play();
+        yield return new WaitForSeconds(audioSource.clip.length);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(CharacterSelection);
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MenuScript : MonoBehaviour
@@ -16,6 +17,17 @@ public class MenuScript : MonoBehaviour
 
     public void gotoGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
+        StartCoroutine(WaitForSoundAndTransition("MainGame"));
+        //AudioSource source = GetComponentInChildren<AudioSource>();
+        //source.Play();
+        //UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
+    }
+
+    private IEnumerator WaitForSoundAndTransition(string MainGame)
+    {
+        AudioSource audioSource = GetComponentInChildren<AudioSource>();
+        audioSource.Play();
+        yield return new WaitForSeconds(audioSource.clip.length);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(MainGame);
     }
 }
