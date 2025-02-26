@@ -65,16 +65,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3233395073215856969, guid: 44d801750fedac8499a57e5a92f202bf, type: 3}
     - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
+      propertyPath: cooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
       propertyPath: maxSpeed
-      value: 20
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
+      propertyPath: minSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
+      propertyPath: launchDuration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
       propertyPath: maxLaunchSpeed
-      value: 11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
       propertyPath: minLaunchSpeed
-      value: 5
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633237780269497659, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}
+      propertyPath: secondsToMaxSpeed
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4219922555057313949, guid: 331897f3b2ee48e468dbd736b3fd0c01, type: 3}

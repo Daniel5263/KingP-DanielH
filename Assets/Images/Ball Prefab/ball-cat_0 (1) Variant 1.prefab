@@ -38,27 +38,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: cooldown
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
-      propertyPath: maxSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
-      propertyPath: minSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
-      propertyPath: maxLaunchSpeed
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
-      propertyPath: minLaunchSpeed
+      propertyPath: maxSpeed
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: minSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: launchDuration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: maxLaunchSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: minLaunchSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: secondToMaxSpeed
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393288954259418040, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
+      propertyPath: secondsToMaxSpeed
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4688717851058663438, guid: 6fb95e74c8c1ef14d90a4cc53e1aa18e, type: 3}
       propertyPath: m_Name

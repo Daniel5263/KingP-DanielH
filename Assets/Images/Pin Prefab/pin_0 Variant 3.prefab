@@ -956,9 +956,17 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8018184210985366833, guid: 5c95ccf3c97e14d40b2bf9459069f7ec, type: 3}
+    - target: {fileID: 7503032288194669060, guid: 92720abe99928e649ae8fced704c540a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8418397274359761421, guid: 92720abe99928e649ae8fced704c540a, type: 3}
       propertyPath: m_Name
       value: pin_0 Variant 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080567124912267354, guid: 92720abe99928e649ae8fced704c540a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -106,18 +106,18 @@ MonoBehaviour:
   minY: -3.76
   maxX: 9.6
   maxY: 3.83
-  minSpeed: 2
-  maxSpeed: 5
+  minSpeed: 1
+  maxSpeed: 2
   targetPosition: {x: 0, y: 0}
   target: {fileID: 155023840036964361, guid: b2d7376cdcf5ac74c8393909574f1b63, type: 3}
   launching: 0
   timeLastLaunch: 0
-  launchDuration: 3
+  launchDuration: 2
   timeLaunchStart: 0
-  minLaunchSpeed: 0
-  maxLaunchSpeed: 0
-  cooldown: 0
-  secondsToMaxSpeed: 0
+  minLaunchSpeed: 3
+  maxLaunchSpeed: 6
+  cooldown: 5
+  secondsToMaxSpeed: 60
   rerouting: 0
 --- !u!50 &-2171875387049248670
 Rigidbody2D:
